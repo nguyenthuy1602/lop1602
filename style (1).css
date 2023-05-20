@@ -1,0 +1,425 @@
+
+
+a{
+  color: black;
+}
+
+h1.tieude{
+  font-size: 100px;
+}
+
+video.vid{
+  margin-left: 15%;
+}
+
+.slides{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Thiết lập khoảng cách và định dạng cho phần giới thiệu */
+#about {
+  padding: 30px;
+  text-align: center;
+  color: #1b1b1b;
+  font-size: large;
+}
+
+
+
+a.shop {
+  display: inline-block; /* Chuyển thành khối hiển thị */
+  padding: 10px 20px; /* Thêm khoảng đệm */
+  background-color: #4f5050; /* Màu nền */
+  color: #fff; /* Màu chữ */
+  text-decoration: none; /* Bỏ gạch chân */
+  border-radius: 20px; /* Bo góc */
+  transition: background-color 0.3s ease-in-out; /* Hiệu ứng chuyển đổi màu nền */
+}
+
+/* Hiệu ứng hover */
+a.shop:hover {
+  background-color: #424242; /* Màu nền hover */
+}
+
+.top{
+  position: relative; 
+  height: 30px; 
+  background-color: rgb(238, 236, 236); 
+    object-fit: cover; 
+}
+
+.top h4{
+  padding-top: 5px;
+  color: #141414;
+}
+
+
+
+.banner {
+  position: relative; 
+  height: 60%; 
+  background-color: rgb(252, 249, 249); 
+    object-fit: cover; 
+    display: flex;
+}
+.banner img {
+  width: 50%; 
+  height: 50%; 
+  object-fit: cover; 
+}
+
+.banner2 {
+  position: relative;
+  height: 30%;
+  background-color: rgb(252, 249, 249);
+  object-fit: cover;
+  display: flex;
+  justify-content: center; /* Căn giữa ảnh theo chiều ngang */
+  align-items: center; /* Căn giữa ảnh theo chiều dọc */
+}
+
+.banner2 img {
+  width: 80%;
+  height: 30%;
+  object-fit: cover;
+}
+
+
+body {
+  margin: 0; 
+  padding: 0; 
+ 
+}
+
+/* CSS cho danh sách sản phẩm */
+.product-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  gap: 10%; /* Khoảng cách giữa các sản phẩm là 15px */
+}
+
+.product-list li {
+  flex: 0 0 calc(24% - 20px);
+  box-sizing: border-box;
+  padding-left: 30px;
+  display: flex; /* Sử dụng flexbox để căn giữa nội dung */
+  flex-direction: column; /* Xếp dọc các phần tử con */
+  align-items: center; /* Căn giữa theo chiều ngang */
+}
+
+.product-list li a {
+  display: block;
+  text-decoration: none;
+}
+
+.product-list li img {
+  max-width: 120%;
+  height: auto;
+  margin-left: -15%;
+}
+
+.product-list li h3 {
+  margin-top: auto; /* Đưa chữ lên giữa */
+  font-size: 15px;
+  margin-left: 40px;
+  margin-right: auto;
+}
+
+.product-list li a {
+  display: block; /* Chuyển thành khối hiển thị */
+  text-align: center; /* Căn giữa theo chiều ngang */
+  text-decoration: none; /* Bỏ gạch chân */
+  transition: transform 0.3s ease-in-out; /* Hiệu ứng chuyển đổi */
+}
+
+.product-list li a:hover {
+  transform: scale(1.1); /* Hiệu ứng phóng to khi hover */
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------*/
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+ height: auto;
+  object-fit: cover; 
+  background-color:white;
+  margin-bottom: -10px;
+}
+
+.container a.logo{
+  margin-left: 70px;
+}
+
+#header {
+  background-color:white
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  height: 70px;
+}
+
+.container li.search-box{
+  margin-right: 50px;
+}
+
+
+
+#main-menu{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  margin-left: 80px;
+}
+
+
+
+#main-menu li a{
+  color: black;
+  display: flex; /* Thêm thuộc tính flex */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  padding: 18px 20px;
+  text-decoration: none;
+  border: none;
+}
+
+#main-menu li {
+  position: relative; /* Thêm thuộc tính position */
+}
+
+#main-menu ul.sub-menu {
+  position: absolute;
+  background-color: #d1d4d6;
+  width: 220px;
+  border: 1px solid #b8b6b6;
+  display: none;
+  left: 0; 
+  top: 100%; 
+  margin-top: -1px; /* Để tránh khoảng cách giữa menu cha và menu con */
+}
+
+#main-menu li:hover > ul.sub-menu {
+  display: block;
+}
+
+#main-menu ul.sub-menu a{
+padding: 20px 20px;
+border-bottom: 1px solid #afacac; /*gach chan be ti*/
+left: 20;
+margin-bottom: -10px;
+}
+
+#main-menu ul.sub-menu li:hover a{
+border-bottom: 1px solid #7c7b7b;
+}
+
+#main-menu ul.sub-menu li:last-child a{
+border: none;
+}
+
+#main-menu ul.sub-menu ul.sub-menu{
+  left: 220px;
+  top: 0px;
+}
+
+
+
+
+
+#main-menu>li>a{
+position: relative;
+}
+#main-menu>li>a::before{
+content: "";
+height: 3px;
+width: 0px;
+background:rgb(172, 169, 169); /* mau gach chan khi hover*/
+position: absolute;
+bottom: 0px;
+left: 0px;
+transition: 0.2s cubic-bezier(0.39, 0.575, 0.565, 1)
+}
+#main-menu>li:hover>a::before{
+width: 100%;
+}
+
+#main-menu li:hover {
+background-color: #f8f8f8; /* mau nen khi hover*/
+
+}
+#nav .nav-arrow-down{
+  font-size: 14px;
+}
+
+
+
+
+/* nút tìm kiếm -------------------------------------------------------------------------------------------- */
+
+/* CSS */
+.search-box {
+  position: relative;
+  margin-top: 10px;
+ 
+}
+
+.search-box input[type="text"] {
+  width: 200px; /* Độ rộng của input */
+  height: auto;
+  padding: 10px; /* Khoảng cách lề trong input */
+  border: none; /* Loại bỏ đường viền */
+  border-radius: 25px; /* Độ cong góc bo */
+  background-color: #e2e0e0; 
+
+}
+
+.search-box button[type="submit"] {
+  position: absolute; /* Tinh chỉnh vị trí của nút tìm kiếm */
+  top: 0;
+  right: 0;
+  width: 35px; /* Độ rộng của nút tìm kiếm */
+  height: 35px; /* Chiều cao của nút tìm kiếm */
+  background-color: #e2e0e0; /* Màu nền của nút tìm kiếm */
+  border: none; /* Loại bỏ đường viền */
+  border-radius: 50%; /* Độ cong góc bo */
+}
+
+.search-box button[type="submit"]:hover {
+  background-color: #b3acac; /* Màu nền của nút tìm kiếm khi rê chuột vào */
+}
+
+/* Khi input được focus */
+.search-box input[type="text"]:focus {
+  outline: none; /* Loại bỏ đường viền focus */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Đổ bóng */
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+
+  /* Reset kiểu dáng mặc định của danh sách */
+  ul, li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+/* Định dạng danh sách sản phẩm */
+.dssp-ngang {
+    display: flex;
+    overflow-x: auto; /* Cho phép cuộn ngang nếu danh sách quá dài */
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+   
+}
+.dssp-ngang li {
+    flex: 0 0 auto;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+    white-space: nowrap; /* Ngăn ngắt dòng trong danh sách */
+}
+.dssp-ngang li a {
+    display: block; /* Để liên kết chiếm toàn bộ diện tích của mục */
+    text-decoration: none; /* Loại bỏ gạch chân liên kết */
+    color: #292525; /* Màu văn bản của liên kết */
+}
+
+.dssp-ngang li a:hover {
+  transform: scale(1.1); /* Hiệu ứng phóng to khi hover */
+}
+
+
+
+.dssp-ngang li img {
+    max-width: 250px; /* Để hình ảnh không vượt quá kích thước của mục */
+    height: auto;
+  }
+
+
+
+
+  a {
+    text-decoration: none;
+}
+
+  #footer {
+    background-color: #b6b6b6;
+    color: #161616;
+    padding: 20px 0;
+    position: relative; 
+  }
+  
+  .end {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .col-md-4 {
+    flex-basis: calc(33.33% - 20px);
+    max-width: calc(38% - 20px);
+    color: rgb(10, 10, 10);
+    
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  ul li i {
+    margin-right: 10px;
+  }
+  
+  .end2 {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .end2 li a {
+    color: #fff;
+  }
+  
+  
+
+ 
+
+
+
+
+
+  
